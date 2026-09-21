@@ -14,12 +14,12 @@ def mirror_pad_2(image: np.array):
 
     return padded
 
-def gaussian_blur_5(image:np.array) -> np.array:
+def gaussian_blur_5(image:np.array, crop:bool=False) -> np.array:
 
     binom_vec_5 = np.array([1, 4, 6, 4, 1])
     gaussian_kernel_5 = 1/256*np.outer(binom_vec_5,binom_vec_5)
 
-    padded = mirror_pad_2(image)
+    padded = mirror_pad_2(image) if (not crop) else image
     windows = sliding_window(padded, (5,5))
 
     return np.einsum('ijhw,hw->ij', windows, gaussian_kernel_5)
@@ -41,7 +41,7 @@ def image_pyramid(image: np.array, depth: int, filter=None) -> list:
 
     return [filter(x) for x in pyramid]
 
-def auto_pyramid(image: np.array, target_max_dim: int=800, filter=None)->list:
+def auto_pyramid(image: np.array, target_max_dim: int=450, filter=None)->list:
     """Returns a pyramid with coarsest image less target_max_dim"""
     depth = int(np.ceil(np.log2(max(image.shape)/target_max_dim)))
     return image_pyramid(image, max(depth, 0) + 1, filter)
