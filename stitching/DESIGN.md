@@ -73,7 +73,7 @@ Notably, this shows that for best results on a dynamically moving vehicle (using
 
 This stitcher also only works due to the linear motion that doesn't have any major changes in camera angle, as it uses NCC. To make this more resilient, the obvious thing to do would be to use an ORB transform or something that is invariant in $SE(2)$. I wanted to keep this almost completely hand-rolled however, and this is the progress that was made. 
 
-Replacing the NCC with a transform should be fairly easy as there is a single call to the offset calculation function. However for this to work for rotations we'd need to pass a third rotational parameter for the offsets to ensure accurate stitching which would require a change to the actual composition function, but nonetheless, that should be somewhat stragihtforward. 
+Replacing the NCC with another transform should be fairly easy as there is a single call to the offset calculation function. However for this to work for rotations we'd need to pass a third rotational parameter for the offsets to ensure accurate stitching which would require a change to the actual composition function, but nonetheless, that should be somewhat stragihtforward. 
 
 To close, my general sentiment towards optimizing for this specific use case would be to force the final frame to be one of the frames used to normalized, do precursor pass for velocity (if velocity is not a paramterer which can be accessed directly), and apply an even coarser pyramid for realtime speeds.
 
