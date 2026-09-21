@@ -1,5 +1,6 @@
 import numpy as np
 import cv2
+from tqdm import tqdm
 import pyramid as pyramid
 import utils as utils
 import align as align
@@ -9,6 +10,9 @@ import align as align
 def video_to_frame_array(input: cv2.VideoCapture, grayscale: bool=False, step: int=1) -> np.ndarray:
     """Decodes the video, keeping every (step)-th frame."""
     kept = []
+
+    total = int(input.get(cv2.CAP_PROP_FRAME_COUNT))
+    bar = tqdm(total=total if total > 0 else None, desc="decoding", unit="frame")
 
     i = 0
     while True:
@@ -21,6 +25,8 @@ def video_to_frame_array(input: cv2.VideoCapture, grayscale: bool=False, step: i
             else:
                 kept.append(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
         i += 1
+        bar.update(1)
+    bar.close()
 
     if not kept:
         raise ValueError("No frames could be read from the video")
@@ -45,7 +51,7 @@ def calculate_relative_offsets_ncc(frames: np.ndarray) -> np.ndarray:
 
     offsets = np.zeros((frames.shape[0], 2))
 
-    for i in range(1,frames.shape[0]):
+    for i in tqdm(range(1, frames.shape[0]), desc="aligning", unit="frame"):
         offsets[i]=np.array(align.calculate_offset_pyramid(frames[i-1], frames[i], initial_search_frac=0.45, step_max_offset=5, crop_frac=0.1))
     return offsets
 
@@ -61,7 +67,7 @@ def stitch_frames_from_offset(frames: np.ndarray, offsets: np.ndarray) -> np.nda
     W_c = int(pos[:, 1].max()) + w
     canvas = np.zeros((H_c, W_c) + frames.shape[3:], frames.dtype)
 
-    for t in range(N):
+    for t in tqdm(range(N), desc="stitching", unit="frame"):
         y, x = pos[t]
         canvas[y:y+h, x:x+w] = frames[t]
 

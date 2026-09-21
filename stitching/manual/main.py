@@ -4,7 +4,7 @@ import stitch
 import utils
 
 video_path = "../stitch_in.mp4"
-sample_rate = 2 # Hz
+sample_rate = 1 # Hz
 out_dir = "out"
 
 video = cv2.VideoCapture(video_path)
