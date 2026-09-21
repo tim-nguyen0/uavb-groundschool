@@ -52,7 +52,8 @@ def calculate_relative_offsets_ncc(frames: np.ndarray) -> np.ndarray:
     offsets = np.zeros((frames.shape[0], 2))
 
     for i in tqdm(range(1, frames.shape[0]), desc="aligning", unit="frame"):
-        offsets[i]=np.array(align.calculate_offset_pyramid(frames[i-1], frames[i], initial_search_frac=0.45, step_max_offset=5, crop_frac=0.1))
+        # offsets[i]=np.array(align.calculate_offset_pyramid(frames[i-1], frames[i], initial_search_frac=0.45, step_max_offset=5, crop_frac=0.1))
+        offsets[i]=np.array(align.vectorized_calculate_offset_ncc(frames[i-1], frames[i], max_offset=800))
     return offsets
 
 def stitch_frames_from_offset(frames: np.ndarray, offsets: np.ndarray) -> np.ndarray:
