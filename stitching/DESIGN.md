@@ -5,7 +5,7 @@ For this image stitcher, I wanted to challenge myself and hand roll most of the 
 
 Given that the video we are stitching together is pretty much exclusively linear motion, cartesian alignment is enough.
 
-Visit [my CS180 project 1 website](https://tim-nguyen0.github.io/cs180/1/p1.html) to see the implementation for all of the alignment apparatus.
+Visit [my CS180 project 1 website](https://tim-nguyen0.github.io/cs180/1/p1.html) to see the implementation for all of the alignment apparatus, the source code which is used in this task is also obviously available in this repository.
 
 Essentially, to align 2 images, I normalize both (grayscaled) images by removing their bias and dividing by $\sqrt{variance}$ with respect to intensities, correlate them componentwise, and maximize the average correlations per pixel. 
 
