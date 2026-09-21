@@ -12,4 +12,5 @@ There are some other steps taken to ensure better edge detections for lots of (b
 
 For this project, I sample images at some constant sampling rate and align and overlay samples sequentially after calculating offsets.
 
-[image-ref]: ./final_images/stitch0.5hz.png "Image"
+
+[image-ref]: final_images/stitch0.5hz.png "Image"
