@@ -1,0 +1,38 @@
+[0.501s] Invoking command in '/home/tim/code/ground_school/4_5_ros2/ros_ws/src/py_srvcli': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(ros_ws) PYTHONPATH=/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/prefix_override:/home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/python3.12/site-packages:${PYTHONPATH} /home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/build install --record /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/install.log --single-version-externally-managed install_data
+[0.615s] running egg_info
+[0.622s] creating ../../build/py_srvcli/py_srvcli.egg-info
+[0.622s] writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO
+[0.622s] writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt
+[0.622s] writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt
+[0.622s] writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt
+[0.623s] writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
+[0.623s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[0.637s] reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[0.637s] adding license file 'LICENSE'
+[0.638s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[0.638s] running build
+[0.638s] running build_py
+[0.638s] creating /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/build/lib/py_srvcli
+[0.638s] copying py_srvcli/service_member_function.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/build/lib/py_srvcli
+[0.638s] copying py_srvcli/client_member_function.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/build/lib/py_srvcli
+[0.638s] copying py_srvcli/__init__.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/build/lib/py_srvcli
+[0.638s] running install
+[0.640s] running install_lib
+[0.647s] creating /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli
+[0.647s] copying /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/build/lib/py_srvcli/service_member_function.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli
+[0.647s] copying /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/build/lib/py_srvcli/client_member_function.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli
+[0.647s] copying /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/build/lib/py_srvcli/__init__.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli
+[0.648s] byte-compiling /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli/service_member_function.py to service_member_function.cpython-312.pyc
+[0.648s] byte-compiling /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli/client_member_function.py to client_member_function.cpython-312.pyc
+[0.648s] byte-compiling /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli/__init__.py to __init__.cpython-312.pyc
+[0.648s] running install_data
+[0.648s] creating /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/share/ament_index/resource_index/packages
+[0.649s] copying resource/py_srvcli -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/share/ament_index/resource_index/packages
+[0.649s] copying package.xml -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/share/py_srvcli
+[0.649s] running install_egg_info
+[0.656s] Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli-0.0.0-py3.12.egg-info
+[0.656s] running install_scripts
+[0.693s] Installing client script to /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/py_srvcli
+[0.693s] Installing service script to /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/py_srvcli
+[0.693s] writing list of installed files to '/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/install.log'
+[0.711s] Invoked command in '/home/tim/code/ground_school/4_5_ros2/ros_ws/src/py_srvcli' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(ros_ws) PYTHONPATH=/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/prefix_override:/home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_srvcli/lib/python3.12/site-packages:${PYTHONPATH} /home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/build install --record /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_srvcli/install.log --single-version-externally-managed install_data

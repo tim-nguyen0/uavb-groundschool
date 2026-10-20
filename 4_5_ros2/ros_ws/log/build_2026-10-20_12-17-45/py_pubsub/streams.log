@@ -1,0 +1,39 @@
+[0.500s] Invoking command in '/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(ros_ws) PYTHONPATH=/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/prefix_override:/home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build
+[0.620s] running develop
+[0.691s] Removing /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages/py-pubsub.egg-link (link to .)
+[0.709s] Invoked command in '/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(ros_ws) PYTHONPATH=/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/prefix_override:/home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build
+[0.710s] Invoking command in '/home/tim/code/ground_school/4_5_ros2/ros_ws/src/py_pubsub': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(ros_ws) PYTHONPATH=/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/prefix_override:/home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build install --record /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/install.log --single-version-externally-managed install_data --force
+[0.827s] running egg_info
+[0.833s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[0.833s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[0.833s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[0.833s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[0.834s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[0.848s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.848s] adding license file 'LICENSE'
+[0.848s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.848s] running build
+[0.848s] running build_py
+[0.848s] creating /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build/lib/py_pubsub
+[0.848s] copying py_pubsub/publisher_member_function.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build/lib/py_pubsub
+[0.848s] copying py_pubsub/__init__.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build/lib/py_pubsub
+[0.849s] copying py_pubsub/subscriber_member_function.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build/lib/py_pubsub
+[0.849s] running install
+[0.851s] running install_lib
+[0.858s] creating /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[0.858s] copying /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[0.858s] copying /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[0.858s] copying /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[0.858s] byte-compiling /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-312.pyc
+[0.859s] byte-compiling /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/__init__.py to __init__.cpython-312.pyc
+[0.859s] byte-compiling /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-312.pyc
+[0.859s] running install_data
+[0.859s] copying resource/py_pubsub -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[0.859s] copying package.xml -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/share/py_pubsub
+[0.859s] running install_egg_info
+[0.866s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub-0.0.0-py3.12.egg-info
+[0.866s] running install_scripts
+[0.902s] Installing listener script to /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/py_pubsub
+[0.902s] Installing talker script to /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/py_pubsub
+[0.902s] writing list of installed files to '/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/install.log'
+[0.920s] Invoked command in '/home/tim/code/ground_school/4_5_ros2/ros_ws/src/py_pubsub' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(ros_ws) PYTHONPATH=/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/prefix_override:/home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build install --record /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/install.log --single-version-externally-managed install_data --force

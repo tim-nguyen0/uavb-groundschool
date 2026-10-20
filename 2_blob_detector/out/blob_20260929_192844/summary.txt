@@ -1,0 +1,10 @@
+image                 channel       blobs
+polka_dots_1.png      gray          112
+polka_dots_1.png      saturation    136
+polka_dots_1.png      bgdistance    136
+polka_dots_2.jpg      gray          1
+polka_dots_2.jpg      saturation    40
+polka_dots_2.jpg      bgdistance    53
+polka_dots_3.jpg      gray          30
+polka_dots_3.jpg      saturation    43
+polka_dots_3.jpg      bgdistance    32
