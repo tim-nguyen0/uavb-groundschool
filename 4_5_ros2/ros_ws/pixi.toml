@@ -1,0 +1,45 @@
+[workspace]
+authors = ["Tim Nguyen <tiim@berkeley.edu>"]
+channels = ["https://prefix.dev/robostack-jazzy", "https://prefix.dev/conda-forge"]
+name = "ros_ws"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+build = {cmd = "colcon build", description = "Build the ROS workspace"}
+test = {cmd = "colcon test", description = "Run tests for the workspace"}
+clean = {cmd = "rm -rf build install log", description = "Clean build artifacts (build, install, log directories)"}
+
+[dependencies]
+ros-jazzy-desktop = ">=0.11.0,<0.12"
+ros-dev-tools = ">=1.0.3,<2"
+ros-jazzy-ros-base = "*"
+pkg-config = "*"
+compilers = "*"
+make = "*"
+ninja = "*"
+ros-jazzy-ros2cli = "*"
+
+
+# Build tools
+colcon-common-extensions = "*"
+
+# Workspace dependencies
+pytest = "*"
+ros-jazzy-ament-copyright = "*"
+ros-jazzy-ament-flake8 = "*"
+ros-jazzy-ament-pep257 = "*"
+ros-jazzy-rclpy = "*"
+ros-jazzy-std-msgs = "*"
+setuptools = "<80"
+
+
+# Workspace dependencies
+
+[target.unix.activation]
+scripts = ["install/setup.bash"]
+
+# Scripts to source on environment activation, found after first colcon build.
+
+[activation]
+scripts = ["install/setup.bash"]

@@ -1,0 +1,15 @@
+[workspace]
+authors = ["Tim Nguyen <tiim@berkeley.edu>"]
+channels = ["https://prefix.dev/robostack-jazzy"]
+name = "ros_ws"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+ros-jazzy-desktop = ">=0.11.0,<0.12"
+ros-dev-tools = ">=1.0.3,<2"
+
+[target.unix.activation]
+scripts = ["install/setup.bash"]

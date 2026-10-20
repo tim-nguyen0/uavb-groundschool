@@ -1,0 +1,23 @@
+[0.446s] Invoking command in '/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(ros_ws) PYTHONPATH=/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/prefix_override:/home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build --no-deps symlink_data
+[0.568s] running develop
+[0.639s] running egg_info
+[0.645s] creating py_pubsub.egg-info
+[0.645s] writing py_pubsub.egg-info/PKG-INFO
+[0.646s] writing dependency_links to py_pubsub.egg-info/dependency_links.txt
+[0.646s] writing entry points to py_pubsub.egg-info/entry_points.txt
+[0.646s] writing requirements to py_pubsub.egg-info/requires.txt
+[0.646s] writing top-level names to py_pubsub.egg-info/top_level.txt
+[0.646s] writing manifest file 'py_pubsub.egg-info/SOURCES.txt'
+[0.660s] reading manifest file 'py_pubsub.egg-info/SOURCES.txt'
+[0.660s] writing manifest file 'py_pubsub.egg-info/SOURCES.txt'
+[0.667s] running build_ext
+[0.667s] Creating /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages/py-pubsub.egg-link (link to .)
+[0.668s] Installing listener script to /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/py_pubsub
+[0.668s] Installing talker script to /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/py_pubsub
+[0.668s] 
+[0.668s] Installed /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub
+[0.668s] running symlink_data
+[0.668s] creating /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[0.668s] symbolically linking /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/resource/py_pubsub -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[0.668s] symbolically linking /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/package.xml -> /home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/share/py_pubsub
+[0.684s] Invoked command in '/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(ros_ws) PYTHONPATH=/home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/prefix_override:/home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/tim/code/ground_school/4_5_ros2/ros_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /home/tim/code/ground_school/4_5_ros2/ros_ws/.pixi/envs/default/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/tim/code/ground_school/4_5_ros2/ros_ws/build/py_pubsub/build --no-deps symlink_data
